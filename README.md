@@ -8,8 +8,11 @@ The theme is based on Bootstrap3. And it is built with HTML5, CSS and jQuery wit
 
 # Resources
 Simple Line Icons [http://simplelineicons.com/].
+
 Bootstrap 3 [http://getbootstrap.com/]
+
 Owl Carousel 2 [https://owlcarousel2.github.io/OwlCarousel2/]
+
 Sticky JS [http://stickyjs.com/]
 
 # License
