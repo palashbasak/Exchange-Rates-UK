@@ -1,0 +1,1270 @@
+/* ==================================================
+ 	* Project         : Redesign
+ 	* Project GIT     : https://github.com/palashbasak/Exchange-Rates-UK.git
+ 	* File Version    : 1.0
+	* Author          : Palash Basak
+	* Author URL      : https://palashbasak.web2tips.com
+   ================================================== */
+
+/* =================================================
+	1. Global
+		1.1 Design settings
+			1.1.1 Default
+			1.1.2 Anchor links
+			1.1.3 Social icon background colors
+			1.1.4 IE 10 fix
+			1.1.5 Selection setting
+		1.2 Helpar classes
+			1.2.1 Margins
+			1.2.2 Paddings
+		1.3 Layout settings
+		1.4 Typography
+
+	2. Sections
+		2.1 Header
+			2.1.1 Setting
+			2.1.2 Logo
+			2.1.3 Social links
+		2.2 Navigation
+			2.2.1 Setting
+			2.2.2 Navbar logo
+			2.2.3 Navigation links and CTA
+		2.3 Time ticker
+			2.3.1 Main setting
+			2.3.2 Up/Down arrows
+		2.4 Single Post
+			2.4.1 Post content
+			2.4.2 Featured image
+			2.4.3 Social sharing
+			2.4.4 Post Meta
+			2.4.5 Breadcrumbs
+			2.4.6 Post footer tags
+			2.4.7 Author
+			2.4.8 Pagination
+		2.5 Related posts
+			2.5.1 Heading
+			2.5.2 Body
+			2.5.3 Author
+		2.6 Footer
+			2.6.1 Setting
+			2.6.2 Footer links
+			2.6.3 Copyright
+
+	3. Sidebar
+		3.1 Setting
+		3.2 Widget
+			3.2.1 Banner widgets
+			3.2.2 Archives widget
+			3.2.3 Recent post widget
+
+	4. Components
+		4.1 Widgets
+			4.1.1 Settings
+			4.1.2 Links widget
+
+	5. Responsive fixes
+		5.1 Smaller Desktops
+		5.2 iPad
+		5.3 Tablet
+		5.4 Mobile
+   ================================================= */
+
+
+
+
+
+/* ==================================================
+	1.1 Global : Design settings
+ ==================================================== */
+/*  ===== 1.1.1 = Default ===== */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+} 
+
+body {
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #000;
+}
+
+/*  ===== 1.1.2 = Anchor links ===== */
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+
+a {
+	color: #F17F42;
+}
+
+a:focus {
+	color: #fff;
+}
+
+a:hover {
+	color: #1F2124;
+}
+
+/*  ===== 1.1.3 = Social icon background colors ===== */
+.twitter,
+.twitter:hover {
+	background-color: #0084b4;
+}
+
+.facebook,
+.facebook:hover {
+	background-color: #3b5998;
+}
+
+.google,
+.google:hover {
+	background-color: #db3236;
+}
+
+.linkedin,
+.linkedin:hover {
+	background-color: #007bb6;
+}
+
+.reddit,
+.reddit:hover {
+	background-color: #149EF0;
+}
+
+.stumbleupon,
+.stumbleupon:hover {
+	background-color: #f74425;
+}
+
+/*  ===== 1.1.4 = IE 10 fix ===== */
+@-webkit-viewport {
+	width: device-width;
+}
+
+@-moz-viewport {
+	width: device-width;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@-o-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+/*  ===== 1.1.5 = Selection setting ===== */
+::-webkit-selection {
+	background: #F17F42;
+	color: #fff;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #F17F42;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #F17F42;
+	color: #fff;
+	text-shadow: none;
+}
+
+
+/* ==================================================
+	1.2 Global : Helpar classes
+ ==================================================== */
+ /*  ===== 1.2.1 = Margins ===== */
+.m0 {margin: 0;}
+.mt5 {margin-top: 5px;}
+.mt10 {margin-top: 10px;}
+.mt15 {margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mt25 {margin-top: 25px;}
+.mt30 {margin-top: 30px;}
+.mt35 {margin-top: 35px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.mb25 {margin-bottom: 25px;}
+.mb30 {margin-bottom: 30px;}
+.mb35 {margin-bottom: 35px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+.mr5 {margin-right: 5px;}
+.mr10 {margin-right: 10px;}
+.mr15 {margin-right: 15px;}
+.mr20 {margin-right: 20px;}
+.mr25 {margin-right: 25px;}
+.mr30 {margin-right: 30px;}
+.mr35 {margin-right: 35px;}
+.mr40 {margin-right: 40px;}
+.mr50 {margin-right: 50px;}
+.ml5 {margin-left: 5px;}
+.ml10 {margin-left: 10px;}
+.ml15 {margin-left: 15px;}
+.ml20 {margin-left: 20px;}
+.ml25 {margin-left: 25px;}
+.ml30 {margin-left: 30px;}
+.ml35 {margin-left: 35px;}
+.ml40 {margin-left: 40px;}
+.ml50 {margin-left: 50px;}
+
+ /*  ===== 1.2.2 = Paddings ===== */
+.p0 {padding: 0;}
+.pt5 {padding-top: 5px;}
+.pt10 {padding-top: 10px;}
+.pt15 {padding-top: 15px;}
+.pt20 {padding-top: 20px;}
+.pt25 {padding-top: 25px;}
+.pt30 {padding-top: 30px;}
+.pt35 {padding-top: 35px;}
+.pt40 {padding-top: 40px;}
+.pt50 {padding-top: 50px;}
+.pb5 {padding-bottom: 5px;}
+.pb10 {padding-bottom: 10px;}
+.pb15 {padding-bottom: 15px;}
+.pb20 {padding-bottom: 20px;}
+.pb25 {padding-bottom: 25px;}
+.pb30 {padding-bottom: 30px;}
+.pb35 {padding-bottom: 35px;}
+.pb40 {padding-bottom: 40px;}
+.pb50 {padding-bottom: 50px;}
+.pr5 {padding-right: 5px;}
+.pr10 {padding-right: 10px;}
+.pr15 {padding-right: 15px;}
+.pr20 {padding-right: 20px;}
+.pr25 {padding-right: 25px;}
+.pr30 {padding-right: 30px;}
+.pr35 {padding-right: 35px;}
+.pr40 {padding-right: 40px;}
+.pr50 {padding-right: 50px;}
+.pl5 {padding-left: 5px;}
+.pl10 {padding-left: 10px;}
+.pl15 {padding-left: 15px;}
+.pl20 {padding-left: 20px;}
+.pl25 {padding-left: 25px;}
+.pl30 {padding-left: 30px;}
+.pl35 {padding-left: 35px;}
+.pl40 {padding-left: 40px;}
+.pl50 {padding-left: 50px;}
+
+
+/* ==================================================
+	1.3 Global : Layout settings
+ ==================================================== */
+#wrapper {
+	background-color: #fff;
+}
+ 
+.full-width {
+	max-width: 100%;
+	background: #fff;
+	
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+			box-shadow: none;
+}
+
+.boxed {
+	max-width: 1200px;
+	margin: 0 auto;
+	background: #f5f5f5; 
+	
+	/* 
+	background-image: url('/image.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+			background-size: cover;
+	*/
+	
+	-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	   -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* ==================================================
+	1.4 Global : Typography
+ ==================================================== */
+h1 {
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+h2, h3 {
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+h4, h5, h6 {
+	line-height: 1.3;
+}
+
+
+/* ==================================================
+	2.1 Sections : Header
+ ==================================================== */
+/*  ===== 2.1.1 = Setting ===== */
+.header {
+	position: relative;
+}
+
+.top-bar {
+	background-color: #F17F42;
+}
+
+/*  ===== 2.1.2 = Logo ===== */
+.logo h2 {
+	font-size: 36px;
+}
+
+.logo a {
+	color: #fff;
+}
+
+.logo a span {
+	color: #1F2124;
+}
+
+.logo > span {
+	color: #fff;
+	font-weight: 600;
+}
+
+/*  ===== 2.1.3 = Social links ===== */
+.social-links li {
+	text-align: center;
+}
+
+.social-links li a {
+	width: 32px;
+	height: 32px;
+	color: #fff;
+	display: block;
+	line-height: 32px;
+	background-color: #1F2124;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	
+	-webkit-transition: background-color 0.3s ease;
+       -moz-transition: background-color 0.3s ease;
+			transition: background-color 0.3s ease;
+}
+
+
+/* ==================================================
+	2.2 Sections : Navigation
+ ==================================================== */
+/*  ===== 2.2.1 = Setting ===== */
+#nav {
+	background-color: #1F2124;
+	border: none;
+}
+
+/*  ===== 2.2.2 = Navbar logo ===== */
+.navbar-brand {
+	min-width: 70px;
+	height: auto;
+	margin-top: 9px;
+	margin-left: 0 !important;
+	padding: 0;
+}
+
+.navbar-brand img {
+	width: 40px;
+}
+
+/*  ===== 2.2.3 = Navigation links and CTA ===== */
+#mainnav li  a {
+	padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 18px;
+	font-weight: 600;
+	color: #F17F42;
+} 
+
+#mainnav li.active  a {
+	background-color: #000;
+	color: #fff;
+}
+
+#mainnav li  a:hover,
+#mainnav li.inactive  a {
+	opacity: 0.7;
+	color: #fff;
+}
+
+#mainnav li.active-cta a {
+	background-color: #EFDC05;
+	color: #000;
+	font-weight: 700;
+} 
+
+#mainnav li.active  a:hover,
+#mainnav li.inactive  a:hover,
+#mainnav li.active-cta a:hover {
+	opacity: 1;
+} 
+
+#mainnav li.active-cta a:hover,
+#mainnav li.inactive-cta a {
+	background-color: #000;
+	color: #fff;
+} 
+
+#nav .navbar-toggle {
+    border: none;	
+}
+
+#nav .navbar-toggle:hover,
+#nav .navbar-toggle:focus {
+	background-color: #F17F42;
+}
+
+#nav .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+#nav .navbar-collapse {
+	border-color: #383A3F;
+}
+
+
+/* ==================================================
+	2.3 Sections : Time ticker
+ ==================================================== */
+/*  ===== 2.3.1 = Main setting ===== */
+.time-ticker .item  h2 {
+	font-size: 16px;
+}
+
+.time-ticker .item  a {
+	color: #1F2124;
+}
+
+.time-ticker .owl-nav {
+    display: none;
+}
+
+.time-ticker .st-down,
+.time-ticker .st-up {
+	display: inline-block;
+	position: relative;
+}
+
+/*  ===== 2.3.2 = Up/Down arrows ===== */
+.time-ticker .st-down:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(229, 58, 64, 0);
+	border-top-color: #E53A40;
+	border-width: 6px;
+    margin-left: 4px;
+    margin-top: -7px;
+}
+
+.time-ticker .st-up:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(40, 89, 67, 0);
+	border-bottom-color: #285943;
+	border-width: 6px;
+    margin-left: 4px;
+    margin-top: -15px;
+}
+
+
+/* ==================================================
+	2.4 Sections : Single Post
+ ==================================================== */
+/*  ===== 2.4.1 = Post content ===== */
+.single-post .entry-content p {
+	line-height: 1.7;
+	font-size: 19px;
+	margin-bottom: 30px;
+	color: #000;
+}
+
+.single-post .entry-content .post-banner img,
+.single-post .entry-content .post-media img,
+.single-post .entry-content .post-media video,
+.single-post .entry-content .post-media audio {
+	width: 100%;
+}
+
+/*  ===== 2.4.2 = Featured image ===== */
+.featured-image {
+	width: 100%;
+}
+
+/*  ===== 2.4.3 = Social sharing ===== */
+.social-share {
+	background-color: #fff;
+	z-index: 999 !important;
+}
+
+.social-share li a {
+	display: block;
+	color: #fff;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	min-width: 110px;
+	padding: 10px 6px;
+	margin-bottom: 12px;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+}
+
+.social-share li a:hover {
+	opacity: 0.8;
+}
+
+.social-share li a i {
+	font-size: 15px;
+}
+
+/*  ===== 2.4.4 = Post Meta ===== */
+.single-post .post-meta .time,
+.single-post .post-meta .author,
+.single-post .post-meta .category {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+}
+
+.single-post .post-meta .time span,
+.single-post .post-meta .author span,
+.single-post .post-meta .category a {
+	font-weight: 400;
+	display: inline-block;
+	margin-left: 5px;
+	position: relative;
+}
+
+.single-post .post-meta .category a:after {
+	position: absolute;
+	content: ",";
+	right: -5px;
+}
+
+/*  ===== 2.4.5 = Breadcrumbs ===== */
+.breadcrumb>li+li:before {
+    content: "\00bb";
+	color: #1F2124;
+}
+
+.single-post .breadcrumb li a {
+	color: #1F2124;
+	font-weight: 700;
+}
+
+.single-post .breadcrumb li a:hover {
+	color: #F17F42;
+}
+
+.single-post .breadcrumb li span {
+    font-size: 12px;	
+}
+
+/*  ===== 2.4.6 = Post footer tags ===== */
+.single-post .post-footer {
+	font-weight: 700;
+}
+
+.single-post .post-footer a {
+	font-weight: 400;
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.single-post .post-footer a:first-child {
+	margin-left: 20px;
+}
+
+.single-post .post-footer a:after {
+	position: absolute;
+	content: ",";
+	right: -5px;
+}
+
+/*  ===== 2.4.7 = Author ===== */
+.single-post .author-box {
+	border: solid 10px #f5f5f5;
+}
+
+.single-post .author-box .author-links li {
+	padding-right: 2px;
+}
+
+.single-post .author-box .author-links li a {
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	display: block;
+	font-size: 14px;
+}
+
+.single-post .author-box .author-links li a:hover {
+	opacity: 0.8;
+}
+
+.single-post .author-box .media-heading {
+	font-weight: 600;
+    font-size: 22px;
+}
+
+.single-post .author-box .description {
+	font-size: 16px;
+    line-height: 1.7;
+}
+
+/*  ===== 2.4.8 = Pagination ===== */
+.single-pagination {
+	background-color: #f5f5f5;
+	
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	   -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.single-pagination a {
+	display: block;
+	position: relative;
+}
+
+.single-pagination a.prev:after {
+	position: absolute;
+	content: "";
+	right: -15px;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background-color: #ddd;
+}
+
+.single-pagination a span {
+	font-size: 22px;
+	font-weight: 600;
+	color: #1F2124;
+	display: block;
+}
+
+.single-pagination a h2 {
+	font-size: 16px;
+	font-weight: 400;
+	color: #F17F42;
+}
+
+.single-pagination a:hover span {
+	color: #1F2124;
+}
+
+.single-pagination a:hover h2 {
+	opacity: 0.7;
+	color: #1F2124;
+}
+
+
+/* ==================================================
+	2.5 Sections : Related posts
+ ==================================================== */
+/*  ===== 2.5.1 = Heading ===== */
+.related-posts-container .heading {
+	position: relative;
+    padding-left: 65px;
+}
+
+.related-posts-container .heading:after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #1F2124;
+	z-index: 9;
+}
+
+.related-posts-container .heading:before {
+	position: absolute;
+	font-family: 'simple-line-icons';
+	content: "\e02b";
+	bottom: -18px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background-color: #1F2124;
+	color: #F17F42;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	z-index: 99;
+	
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+}
+
+/*  ===== 2.5.2 = Body ===== */
+.related-post img {
+	width: 100%;
+}
+
+.related-post .post-header,
+.related-post .author-box {
+	background: #f5f5f5;
+}
+
+.related-post .post-header  .post-title {
+	font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/*  ===== 2.5.3 = Author ===== */
+.related-post .author-box .media-left img {
+	width: 40px;
+	height: 40px;
+	
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+			border-radius: 100%;
+}
+
+.related-post .author-box .media-heading {
+    font-size: 14px;
+	font-weight: 600;
+}
+
+.related-post .author-box .author-role {
+	font-size: 12px;
+}
+
+
+/* ==================================================
+	2.6 Sections : Footer
+ ==================================================== */
+/*  ===== 2.6.1 = Setting ===== */
+.footer {
+	position: relative;
+}
+
+.footer-widgets {
+	background-color: #1F2124;
+}
+
+.footer-copyright {
+	background-color: #000;
+	font-size: 14px;
+}
+
+/*  ===== 2.6.2 = Footer links ===== */
+.footer-links li  {
+	margin: 5px;
+}
+
+.footer-links li a:hover {
+	color: #fff;
+	opacity: 0.7;
+}
+
+/*  ===== 2.6.3 = Copyright ===== */
+.copyright {
+	color: #fff;
+	font-size: 14px;
+	padding: 5px;
+}
+
+
+/* ==================================================
+	3. Sidebar
+ ==================================================== */
+/*  ===== 3.1 = Setting ===== */
+.main-sidebar {
+	position: relative;
+}
+
+/*  ===== 3.2 = Widget ===== */
+.sidebar-widget {
+	background-color: #f5f5f5;
+}
+
+.sidebar-widget .widget-title {
+	position: relative;
+	font-size: 24px;
+	font-weight: 700;
+	color: #F17F42;
+	border-bottom: solid 2px #F17F42;
+}
+
+.sidebar-widget .widget-title:before {
+	position: absolute;
+	content: "";
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	left: 0;
+	bottom: -16px;
+	width: 30px;
+	height: 30px;
+	background-color: #F17F42;
+	
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+}
+
+/*  ===== 3.2.1 = Banner widgets ===== */
+.sidebar-widget.image-banner,
+.sidebar-widget.script-banner {
+	background-color: transparent;
+}
+
+.sidebar-widget.image-banner img,
+.sidebar-widget.script-banner > img{
+	width: 100%;
+}
+
+/*  ===== 3.2.2 = Archives widget ===== */
+.sidebar-widget.archive .widget-title:before {
+	font-family: 'simple-line-icons';
+	content: "\e03f";
+}
+
+.sidebar-widget.archive .widget-content li {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.sidebar-widget.archive .widget-content li:before {
+	position: absolute;
+	font-family: 'simple-line-icons';
+	content: "\e089";
+	left: -40px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	color: #F17F42;
+}
+
+.sidebar-widget.archive .widget-content li ul li:before {
+	position: absolute;
+	content: "\00bb";
+	left: -30px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	color: #F17F42;
+}
+
+.sidebar-widget.archive .widget-content li a {
+	color: #1F2124;
+}
+
+.sidebar-widget.archive .widget-content li a:hover {
+	color: #F17F42;
+}
+
+.sidebar-widget.archive .widget-content li .count {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	background-color: #383A3F;
+	font-size: 14px;
+	padding: 1px 3px;
+	min-width: 23px;
+	text-align: center;
+	color: #fff;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+}
+
+.sidebar-widget.archive .widget-content li ul li .count {
+	background-color: #F17F42;
+}
+
+/*  ===== 3.2.3 = Recent post widget ===== */
+.sidebar-widget.recent-posts .widget-title:before {
+	font-family: 'simple-line-icons';
+	content: "\e067";
+}
+
+.sidebar-widget.recent-posts .widget-recp-post {
+	position: relative;
+    min-height: 300px;
+    overflow: hidden;	
+}
+
+.sidebar-widget.recent-posts .widget-recp-post:last-child {
+	margin-bottom: 0 !important;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post .overlay-content {
+	position: absolute;
+    top: 999px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F17F42;
+	z-index: 99;
+    
+	-webkit-transition: all 0.5s ease-out;
+       -moz-transition: all 0.5s ease-out;
+			transition: all 0.5s ease-out;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post:hover .overlay-content {
+	top: 0;
+    
+	-webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post .entry-title {
+	position: absolute;
+	z-index: 99;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: rgba(241, 127, 66, 1);
+}
+
+.sidebar-widget.recent-posts .widget-recp-post .entry-title a {
+	color: #fff;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post img {
+	width: 100%;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post p {
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.5;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post .recp-time {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post .label {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 999;
+	background-color: #CE6D39;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post p a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.sidebar-widget.recent-posts .widget-recp-post p a:hover {
+	color: #fff;
+}
+
+
+/* ==================================================
+	4.1 Components : Widgets
+ ==================================================== */
+/*  ===== 4.1.1 = Settings ===== */
+.widget .widget-title {
+	position: relative;
+	color: #fff;
+	opacity: 0.7;
+	font-weight: 600;
+	display: block;
+	border-bottom: solid 1px #3E4348;
+}
+
+.widget .widget-title:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -8px;
+	width: 15px;
+	height: 15px;
+	background-color: #3E4348;
+	
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+/*  ===== 4.1.2 = Links widget ===== */
+.widget_nav_menu .widget-content li {
+	position: relative;
+}
+
+.widget_nav_menu .widget-content li a {
+	font-size: 14px;
+	padding: 5px 0;
+	display: block;
+}
+
+.widget_nav_menu .widget-content li a:hover {
+	color: #fff;
+}
+
+.widget_nav_menu .widget-content li:before {
+	position: absolute;
+	content: "\00bb";
+	left: -25px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	color: #fff;
+}
+
+
+/* ==================================================
+	5. Responsive fixes
+ ==================================================== */
+/*  ===== 5.1 = Smaller Desktops ===== */
+@media only screen and (max-width: 1200px) {
+    .logo h2 {
+		font-size: 26px;
+	}
+	
+	.logo > span {
+		font-size: 14px;
+	}
+	
+	.footer-links li {
+		font-size: 12px;
+	}
+	
+	.social-share li a {
+		min-width: 87px;
+		padding: 7px;
+	}
+}
+
+/*  ===== 5.2 = iPad ===== */
+@media only screen and (max-width: 991px) {
+    .social-links {
+		margin-top: 15px;
+	}
+	
+	#mainnav li  a {
+		font-size: 14px;
+	}
+	
+	.navbar-brand {
+		min-width: 50px;
+	}
+	
+	.footer-widgets .col-md-3 {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	
+	.footer-copyright,
+	.footer-copyright .text-right {
+		text-align: center;
+	}
+	
+	.copyright {
+		margin-bottom: 5px;
+	}
+}
+
+/*  ===== 5.3 = Tablet ===== */
+@media only screen and (max-width: 767px) {	
+	.logo {
+		text-align: center;
+	}
+	
+	.show-480 {
+		display: none;
+		position: fixed;
+		bottom: 10px;
+		z-index: 9999;
+	}
+	
+	.show-480 img {
+		width: 100%;
+	}
+	
+	.navbar-brand {
+		margin-left: 15px !important;
+	}
+	
+	.navbar-brand img {
+		width: 32px;
+	}
+	
+	#mainnav ul.nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	#mainnav li a {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	
+	.footer-widgets .col-md-3 {
+		margin-bottom: 35px;
+		margin-top: 35px;
+	}
+	
+	body {
+		font-size: 15px;
+	}
+	
+	h1 {
+		font-size: 26px;
+	}
+	
+	h2 {
+		font-size: 24px;
+	}
+	
+	.single-post .entry-content p {
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+	
+	.single-pagination a.prev:after {
+		display: none;
+	}
+	
+	.single-pagination a.prev {
+		border-bottom: solid 2px #ddd;
+	}
+	
+	.single-pagination a.prev,
+	.single-pagination a.next {
+		padding: 15px 0;
+		text-align: left;
+	}
+	
+	.single-pagination a.prev {
+		padding-bottom: 25px;
+	}
+	
+	.social-share li {
+		float: left;
+		width: 16.667%;
+	}
+	
+	.social-share li:last-child {
+		padding-right: 0px;
+	}
+
+	.social-share li a {
+		min-width: 1px;
+	}
+	
+	.social-share li a i {
+		display: block !important;
+	}
+	
+	.social-share li a span {
+		display: none;
+	}
+}
+
+/*  ===== 5.4 = Mobile ===== */
+@media only screen and (max-width: 480px) {
+    .top-bar {
+		padding: 10px 0;
+	}
+	
+	.show-480 {
+		display: block;
+	}
+	
+	.copyright {
+		font-size: 12px;
+	}
+	
+	.footer-widgets {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	.single-post .author-box {
+		padding: 15px;
+		border-width: 5px;
+	}
+	
+	h1 {
+		font-size: 20px;
+	}
+	
+	h2,
+	.single-post .author-box .media-heading,
+	.single-pagination a span {
+		font-size: 18px;
+	}
+	
+	.single-post .post-meta .time, 
+	.single-post .post-meta .author, 
+	.single-post .post-meta .category {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+	
+	.single-post .author-box .description {
+		font-size: 13px;
+	}
+	
+	.single-pagination a h2 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+    .show-480 {
+		display: none;
+	}
+}
