@@ -1,0 +1,66 @@
+/* ==================================================
+	
+	----------------------------------------
+	Scheme: Red		HEX			RGB
+	-----------------------------------------
+	1. color 1		#8a1616		rgb(138, 22, 22)
+	2. color 2		#b31313		rgb(179, 19, 19)
+	3. color 3  	#cc3232     rgb(204, 50, 50)
+	
+	
+   ================================================== */
+
+   
+/* ====== color 1 =====*/
+.logo a span {
+	color: #8a1616;
+}
+
+#mainnav li.active-cta a:hover,
+#mainnav li.active  a,
+#nav .navbar-toggle:hover,
+#nav .navbar-toggle:focus {
+	background-color: #8a1616;
+}
+
+#nav .navbar-collapse {
+	border-color: #8a1616;
+}
+
+/* ====== color 2 =====*/
+a,
+.single-pagination a h2,
+.single-post .breadcrumb li a:hover {
+	color: #b31313;
+}
+
+.social-links li a,
+#nav,
+.sidebar-widget.recent-posts .widget-recp-post .label,
+.sidebar-widget.newsletter .widget-content .form-inner button {
+	background-color: #b31313;
+}
+
+/* ====== color 3 =====*/
+.sidebar-widget .widget-title {
+	border-bottom-color: #cc3232;
+}
+
+.sidebar-widget.archive .widget-content li:before,
+.sidebar-widget.archive .widget-content li ul li:before {
+	color: #cc3232;
+}
+
+.sidebar-widget .widget-title:before,
+.sidebar-widget.archive .widget-content li ul li .count,
+.sidebar-widget.recent-posts .widget-recp-post .overlay-content,
+.sidebar-widget.recent-posts .widget-recp-post .entry-title,
+.top-bar,
+.related-post .author-box,
+.related-post .overlay-content {
+	background-color: #cc3232;
+}
+
+.related-post .post-header {
+	background-color: rgba(204, 50, 50, 0.5);
+}
