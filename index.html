@@ -86,6 +86,12 @@
 	
     <!-- main css -->
     <link href="assets/css/style.css" rel="stylesheet">
+	
+	<!-- theme color 
+		 Note: switch between three colors "blue", "orange" and "red" simply by replacing
+		 "blue.css" to "orange.css" or "red.css"
+	-->
+    <link href="assets/css/colors/blue.css" rel="stylesheet">
 
 </head>
 <body class="full-width"> <!-- you switch layout to box mode by adding 'boxed' class in the body tag --> 
@@ -101,7 +107,7 @@
 		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 			
 			<!-- top bar -->
-			<div class="top-bar pt20 pb20">
+			<div class="top-bar pt20 pb20 hidden-xs">
 				<div class="container">
 					<div class="row">
 						
@@ -151,7 +157,7 @@
 						
 						<!-- navbar icon -->
 						<a class="navbar-brand" href="#">
-							<img src="assets/img/money-bag.svg" alt="Choose a Currency">
+							<img src="assets/img/logo.png" alt="Exchange Rates UK">
 						</a>
 					</div>
 					
@@ -340,7 +346,7 @@
 							<!-- related posts -->
 							<div class="related-posts-container clearfix mt50 mb50">
 								
-								<h2 class="heading m0 pb20 mb50">Related Posts</h2>
+								<h2 class="heading m0 pl15 mb20">Related Posts</h2>
 								
 								<!-- post -->
 								<div class="col-md-4 col-sm-6 mb25">
@@ -356,22 +362,32 @@
 											<time class="hidden" datetime="2017-02-21T18:10:15+00:00" itemprop="datePublished">February 21, 2017</time>
 										</header>
 										
-										<!-- author bio -->
-										<section class="author-box pb20 pl20 pr20" itemscope="itemscope" itemprop="author" itemtype="http://schema.org/Person">
-											<div class="media">
-												<div class="media-left">
-													<a href="#" rel="author" title="Jhone Doe">
-														<img class="media-object" src="https://placehold.it/50x50" alt="Jhon Doe">
-													</a>
-												</div>
-												<div class="media-body">
-													<h4 class="media-heading"><span itemprop="name">Jhon Doe</span></h4>
-													<div class="author-role" itemprop="potentialAction">
-														<p>Rockefeller Treasury Services, Inc.</p>
+										<!-- overlay -->
+										<div class="overlay-content pt20 pb20 pl20 pr20">
+											
+											<!-- excrept -->
+											<div itemprop="description">
+												<p>Euro to Dollar (EUR/USD) Exchange Rate Forecast: Analysts Project a Fall Towards 1.0350<a href="#">[...]</a></p>
+											</div>
+											
+											<!-- author bio -->
+											<section class="author-box pt10" itemscope="itemscope" itemprop="author" itemtype="http://schema.org/Person">
+												<div class="media">
+													<div class="media-left">
+														<a href="#" rel="author" title="Jhone Doe">
+															<img class="media-object" src="https://placehold.it/50x50" alt="Jhon Doe">
+														</a>
+													</div>
+													<div class="media-body">
+														<h4 class="media-heading"><span itemprop="name">Jhon Doe</span></h4>
+														<div class="author-role" itemprop="potentialAction">
+															<p>Rockefeller Treasury Services, Inc.</p>
+														</div>
 													</div>
 												</div>
-											</div>
-										</section>
+											</section>
+											
+										</div><!-- ./ overlay -->
 										
 									</article>
 								</div><!-- ./ post -->
@@ -390,22 +406,32 @@
 											<time class="hidden" datetime="2017-02-21T18:10:15+00:00" itemprop="datePublished">February 21, 2017</time>
 										</header>
 										
-										<!-- author bio -->
-										<section class="author-box pb20 pl20 pr20" itemscope="itemscope" itemprop="author" itemtype="http://schema.org/Person">
-											<div class="media">
-												<div class="media-left">
-													<a href="#" rel="author" title="Jhone Doe">
-														<img class="media-object" src="https://placehold.it/50x50" alt="Jhon Doe">
-													</a>
-												</div>
-												<div class="media-body">
-													<h4 class="media-heading"><span itemprop="name">Jhon Doe</span></h4>
-													<div class="author-role" itemprop="potentialAction">
-														<p>Rockefeller Treasury Services, Inc.</p>
+										<!-- overlay -->
+										<div class="overlay-content pt20 pb20 pl20 pr20">
+											
+											<!-- excrept -->
+											<div itemprop="description">
+												<p>Decline Stalls at 1.05 for the Euro to Dollar Exchange Rate, Fed Rate Hike Bets Boost USD<a href="#">[...]</a></p>
+											</div>
+											
+											<!-- author bio -->
+											<section class="author-box pt10" itemscope="itemscope" itemprop="author" itemtype="http://schema.org/Person">
+												<div class="media">
+													<div class="media-left">
+														<a href="#" rel="author" title="Jhone Doe">
+															<img class="media-object" src="https://placehold.it/50x50" alt="Jhon Doe">
+														</a>
+													</div>
+													<div class="media-body">
+														<h4 class="media-heading"><span itemprop="name">Jhon Doe</span></h4>
+														<div class="author-role" itemprop="potentialAction">
+															<p>Rockefeller Treasury Services, Inc.</p>
+														</div>
 													</div>
 												</div>
-											</div>
-										</section>
+											</section>
+											
+										</div><!-- ./ overlay -->
 										
 									</article>
 								</div><!-- ./ post -->
@@ -424,22 +450,32 @@
 											<time class="hidden" datetime="2017-02-21T18:10:15+00:00" itemprop="datePublished">February 21, 2017</time>
 										</header>
 										
-										<!-- author bio -->
-										<section class="author-box pb20 pl20 pr20" itemscope="itemscope" itemprop="author" itemtype="http://schema.org/Person">
-											<div class="media">
-												<div class="media-left">
-													<a href="#" rel="author" title="Jhone Doe">
-														<img class="media-object" src="https://placehold.it/50x50" alt="Jhon Doe">
-													</a>
-												</div>
-												<div class="media-body">
-													<h4 class="media-heading"><span itemprop="name">Jhon Doe</span></h4>
-													<div class="author-role" itemprop="potentialAction">
-														<p>Rockefeller Treasury Services, Inc.</p>
+										<!-- overlay -->
+										<div class="overlay-content pt20 pb20 pl20 pr20">
+											
+											<!-- excrept -->
+											<div itemprop="description">
+												<p>Which British Pound (Sterling) to Euro Rate Predictions See 1.21 in 2017?<a href="#">[...]</a></p>
+											</div>
+											
+											<!-- author bio -->
+											<section class="author-box pt10" itemscope="itemscope" itemprop="author" itemtype="http://schema.org/Person">
+												<div class="media">
+													<div class="media-left">
+														<a href="#" rel="author" title="Jhone Doe">
+															<img class="media-object" src="https://placehold.it/50x50" alt="Jhon Doe">
+														</a>
+													</div>
+													<div class="media-body">
+														<h4 class="media-heading"><span itemprop="name">Jhon Doe</span></h4>
+														<div class="author-role" itemprop="potentialAction">
+															<p>Rockefeller Treasury Services, Inc.</p>
+														</div>
 													</div>
 												</div>
-											</div>
-										</section>
+											</section>
+											
+										</div><!-- ./ overlay -->
 										
 									</article>
 								</div><!-- ./ post -->
@@ -463,45 +499,66 @@
 							</section>
 							
 							
-							<!-- widget [archive banner] -->
-							<section class="sidebar-widget archive col-md-12 col-sm-6 pt30 pr30 pb30 pl30 mb40">
-								<h4 class="widget-title m0 mb40 pb20 pl40">Archives</h4>
-								<ul class="widget-content list-unstyled pl40 m0">
-									<li>
-										<a href="#"><strong>2015</strong></a>
-										<span class="count">62</span>
-									</li>
-									<li>
-										<a href="#"><strong>2016</strong></a>
-										<span class="count">45</span>
-										<ul class="list-unstyled pl30 m0 mt20">
-											<li>
-												<a href="#">January</a>
-												<span class="count">5</span>
-											</li>
-											<li>
-												<a href="#">February</a>
-												<span class="count">9</span>
-											</li>
-											<li>
-												<a href="#">March</a>
-												<span class="count">7</span>
-											</li>
-											<li>
-												<a href="#">April</a>
-												<span class="count">1</span>
-											</li>
-											<li>
-												<a href="#">May</a>
-												<span class="count">13</span>
-											</li>
-											<li>
-												<a href="#">June</a>
-												<span class="count">10</span>
-											</li>
-										</ul>
-									</li>
-								</ul>
+							<!-- widget [converter] -->
+							<section class="sidebar-widget converter col-md-12 col-sm-6 pt30 pr30 pb30 pl30 mb40">
+								<h4 class="widget-title m0 mb30 pb20 pl40">Exchange Rate Calc</h4>
+								<div class="widget-content">
+								
+									<!-- form -->
+									<div class="cnv-box mb15 clearfix">
+										<input type="text" class="form-control col-sm-6" id="fcr" placeholder="1">
+										<select class="form-control" id="sel1">
+											<option value="AUD">Australian Dollar</option>
+											<option value="BGN">Bulgarian lev</option>
+											<option value="CAD">Canadian</option>
+											<option value="DKK">Danish Krone</option>
+											<option value="GBP">Pound Sterling</option>
+											<option value="ILS">ISraeli New Shekel</option>
+											<option value="INR">Indian Rupee</option>
+											<option value="JPY">Japanese Yen</option>
+											<option value="PHP">Philippine Peso</option>
+											<option value="RUB">Russian Ruble</option>
+											<option value="USD" selected>US dollar</option>
+										</select>
+									</div>
+									
+									<!-- converter icon for mobile -->
+									<div class="converter-icon text-center hidden visible-xs mt30 mb30"><i class="icon icon-refresh"></i></div>
+									
+									<!-- to -->
+									<div class="cnv-box mt15 clearfix">
+										<input type="text" class="form-control" disabled id="tcr" placeholder="1.612">
+										<select class="form-control" id="sel1">
+											<option value="AUD" selected>Australian Dollar</option>
+											<option value="BGN">Bulgarian lev</option>
+											<option value="CAD">Canadian</option>
+											<option value="DKK">Danish Krone</option>
+											<option value="GBP">Pound Sterling</option>
+											<option value="ILS">ISraeli New Shekel</option>
+											<option value="INR" >Indian Rupee</option>
+											<option value="JPY">Japanese Yen</option>
+											<option value="PHP">Philippine Peso</option>
+											<option value="RUB">Russian Ruble</option>
+											<option value="USD">US dollar</option>
+										</select>
+									</div>
+									
+								</div>
+							</section>
+							
+							
+							<!-- widget [newsletter] -->
+							<section class="sidebar-widget newsletter col-md-12 col-sm-6 pt30 pr30 pb30 pl30 mb40">
+								<h4 class="widget-title m0 mb30 pb20 pl40">Free Email Updates</h4>
+								<div class="widget-content">
+									<p>Subscribe to our daily mailling list to recive exchange tips in you inbox</p>
+									<form class="form-inline" method="post" action="#">
+										<div class="form-inner pb10 pl10 pr10 pt10">
+											<input type="email" class="form-control" id="email" placeholder="Your email">
+											<button type="submit" class="btn btn-primary">Subscribe</button>
+										</div>
+									</form>
+								</div>
 							</section>
 							
 							
