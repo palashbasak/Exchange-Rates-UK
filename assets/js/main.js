@@ -7,8 +7,12 @@
 		// fixed menu
 		if ($(this).scrollTop() > 135) {
 			$('#nav').addClass('navbar-fixed-top slideInDown');
+			$('#nav .navbar-brand span').addClass('hidden');
+			$('#nav .navbar-brand img').removeClass('hidden');
 		} else {
 			$('#nav').removeClass('navbar-fixed-top slideInDown');
+			$('#nav .navbar-brand span').removeClass('hidden');
+			$('#nav .navbar-brand img').addClass('hidden');
 		}
 		
 		
