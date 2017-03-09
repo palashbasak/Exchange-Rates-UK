@@ -71,7 +71,7 @@
 
 
     <!-- font and icons -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- bootstrap lib -->
@@ -115,9 +115,9 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="logo">
 								<h2 itemprop="headline" class="m0">
-									<a href="#" title="Exchange Rates UK"><span>Exchange</span> Rates UK</a>
+									<a href="#" title="Exchange Rates UK"><span>ExchangeRates</span><b>.org.uk</b></a>
 								</h2>
-								<span itemprop="description">Daily Euro To Pound Analysis</span>
+								<span class="hidden" itemprop="description">Daily Euro To Pound Analysis</span>
 							</div>
 						</div>
 						
@@ -366,8 +366,8 @@
 											<time class="hidden" datetime="2017-02-21T18:10:15+00:00" itemprop="datePublished">February 21, 2017</time>
 										</header>
 										
-										<!-- overlay -->
-										<div class="overlay-content pt20 pb20 pl20 pr20">
+										<!-- overlay [hidden] -->
+										<div class="overlay-content pt20 pb20 pl20 pr20 hidden">
 											
 											<!-- excrept -->
 											<div itemprop="description">
@@ -410,8 +410,8 @@
 											<time class="hidden" datetime="2017-02-21T18:10:15+00:00" itemprop="datePublished">February 21, 2017</time>
 										</header>
 										
-										<!-- overlay -->
-										<div class="overlay-content pt20 pb20 pl20 pr20">
+										<!-- overlay [hidden] -->
+										<div class="overlay-content pt20 pb20 pl20 pr20 hidden">
 											
 											<!-- excrept -->
 											<div itemprop="description">
@@ -454,8 +454,8 @@
 											<time class="hidden" datetime="2017-02-21T18:10:15+00:00" itemprop="datePublished">February 21, 2017</time>
 										</header>
 										
-										<!-- overlay -->
-										<div class="overlay-content pt20 pb20 pl20 pr20">
+										<!-- overlay [hidden] -->
+										<div class="overlay-content pt20 pb20 pl20 pr20 hidden">
 											
 											<!-- excrept -->
 											<div itemprop="description">
@@ -492,14 +492,16 @@
 				
 					<!-- sidebar -->
 					<div class="col-md-4">
-						<aside class="main-sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+						<aside class="main-sidebar clearfix" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 							
 							<!-- widget [image banner] -->
 							<section class="sidebar-widget image-banner col-md-12 col-sm-6 mb40">
 								<h4 class="widget-title hidden m0 mb40 pb20 pl40">Banner Heading</h4>
-								<a href="#" title="banner_title">
-									<img src="https://placehold.it/300x300/?text=Image%20Banner" alt="banner_title">
-								</a>
+								<div class="widget-content">
+									<a href="#" title="banner_title">
+										<img src="https://placehold.it/300x300/?text=Image%20Banner" alt="banner_title">
+									</a>
+								</div>
 							</section>
 							
 							
@@ -648,7 +650,11 @@
 							<!-- widget [script banner] -->
 							<section class="sidebar-widget script-banner col-md-12 col-sm-6 mb40">
 								<h4 class="widget-title hidden m0 mb40 pb20 pl40">Banner Heading</h4>
-								<img src="https://placehold.it/300x300/?text=Script%20Banner" alt="banner_title">
+								<div class="widget-content">
+									<a href="#" title="banner_title">
+										<img src="https://placehold.it/300x300/?text=Script%20Banner" alt="banner_title">
+									</a>
+								</div>
 							</section> 
 							
 						</aside>

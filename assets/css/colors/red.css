@@ -12,10 +12,6 @@
 
    
 /* ====== color 1 =====*/
-.logo a span {
-	color: #8a1616;
-}
-
 #mainnav li.active-cta a:hover,
 #mainnav li.active  a,
 #nav .navbar-toggle:hover,

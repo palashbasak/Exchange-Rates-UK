@@ -15,6 +15,14 @@ The theme is based on Bootstrap3. And it is built with HTML5, CSS and jQuery wit
 - The rates scroller at bottom needs to be width of container not full-width. Also it doesn't scroll anymore?
 
 
+#Final Changes
+- The side image banners, are they the same size as the Torfx ad on the Future Currency website? Reason being, I want the side column width to be same as the ads.
+- Can we use a better style on the Exchange Rates UK logo eg: [http://www.exchangerates.org.uk/info-currency-news-item-2017.php?id=17463]
+- the last share buttons drops below up on narrower desktop view, once you scroll past them (ie they become sticky)
+- The footer links, can we make them like [http://www.exchangerates.org.uk/info-currency-news-item-2017.php?id=17463]
+- Related posts, this is still not quite right
+
+
 # Resources
 Simple Line Icons [http://simplelineicons.com/].
 
