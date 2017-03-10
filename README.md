@@ -23,6 +23,11 @@ The theme is based on Bootstrap3. And it is built with HTML5, CSS and jQuery wit
 - Related posts, this is still not quite right
 
 
+#Final Changes 1
+- the related posts at bottom, there will be no image as the text is taking up too much space. Any ideas?
+- can we lose the icon/bottom border under the side bar headings (eg Exchange Rate Calc) and can the margins be so that the headings start further to the left so the text lines up with the text underneath?
+
+
 # Resources
 Simple Line Icons [http://simplelineicons.com/].
 
