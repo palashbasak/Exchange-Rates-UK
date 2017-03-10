@@ -33,4 +33,4 @@ Owl Carousel 2 [https://owlcarousel2.github.io/OwlCarousel2/]
 Sticky JS [http://stickyjs.com/]
 
 # License
-You're can not use this theme in your personal and private projects.
+You're can not use this theme in your personal and private projects. Only **ExchangeRatesUK.org.uk** hold the copyright for this project.
