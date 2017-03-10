@@ -759,14 +759,14 @@ h4, h5, h6 {
 }
 
 .related-post .post-header {
-	position: absolute;
-	bottom: 0px;
+	position: relative;
+	bottom: 0;
 	left: 0;
 	right: 0;
 }
 
 .related-post .post-header a {
-	color: #fff;
+	color: #000;
 }
 
 .related-post .post-header a:hover {
@@ -814,10 +814,6 @@ h4, h5, h6 {
 	-webkit-transition: all 0.5s ease;
        -moz-transition: all 0.5s ease;
 			transition: all 0.5s ease;
-}
-
-.related-post:hover {
-	
 }
 
 /*  ===== 2.5.3 = Author ===== */
@@ -895,10 +891,11 @@ h4, h5, h6 {
 	font-size: 24px;
 	font-weight: 700;
 	color: #1F2124;
-	border-bottom: solid 2px #1F2124;
+	border-bottom: none;
 }
 
 .sidebar-widget .widget-title:before {
+	display: none;
 	position: absolute;
 	content: "";
 	font-size: 16px;
